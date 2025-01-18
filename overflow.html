@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>overflow</title>
   <style>
+    .ellipsis {
+      margin: 0 auto;
+      border: 2px solid violet;
+      width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+    }
+
     .box {
       margin: 0 auto;
       border: 2px solid goldenrod;
@@ -30,6 +40,12 @@
 </head>
 
 <body>
+  <header>
+    <p title="I am a serious person. I am investing time 8 to 10 hour for learning programming at every single day."
+      class="ellipsis">
+      I am a serious person. I am investing time 8 to 10 hour for learning programming at every single day.
+    </p>
+  </header>
   <section>
     <!-- .box*2>h3{My text box- $}+p>lorem200  -->
     <div id="box_1" class="box">
